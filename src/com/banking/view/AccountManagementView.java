@@ -105,7 +105,7 @@ public class AccountManagementView extends Application {
         accountTypeCombo.getItems().addAll("Savings Account", "Investment Account", "Cheque Account");
         accountTypeCombo.setPromptText("Select account type");
         accountTypeCombo.setMaxWidth(Double.MAX_VALUE);
-        styleTextField(accountTypeCombo);
+        styleComboBox(accountTypeCombo);
         accountTypeCombo.setOnAction(e -> handleAccountTypeChange());
         
         // Initial Balance
@@ -212,16 +212,25 @@ public class AccountManagementView extends Application {
         
         return container;
     }
-    
-    private void styleTextField(Control field) {
-        field.setStyle(
-            "-fx-padding: 10;" +
-            "-fx-background-radius: 5;" +
-            "-fx-border-color: #ddd;" +
-            "-fx-border-radius: 5;"
-        );
-        field.setFont(Font.font("Arial", 13));
-    }
+    private void styleTextField(TextField field) {
+    field.setStyle(
+        "-fx-padding: 10;" +
+        "-fx-background-radius: 5;" +
+        "-fx-border-color: #ddd;" +
+        "-fx-border-radius: 5;"
+    );
+    field.setFont(Font.font("Arial", 13));
+}
+private void styleComboBox(ComboBox<?> comboBox) {
+    comboBox.setStyle(
+        "-fx-padding: 10;" +
+        "-fx-background-radius: 5;" +
+        "-fx-border-color: #ddd;" +
+        "-fx-border-radius: 5;" +
+        "-fx-font-size: 13;" +
+        "-fx-font-family: Arial;"
+    );
+}
     
     private void handleAccountTypeChange() {
         String selectedType = accountTypeCombo.getValue();

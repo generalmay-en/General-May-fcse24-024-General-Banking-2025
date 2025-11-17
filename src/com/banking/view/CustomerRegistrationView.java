@@ -175,15 +175,26 @@ public class CustomerRegistrationView extends Application {
         return container;
     }
     
-    private void styleTextField(Control field) {
-        field.setStyle(
-            "-fx-padding: 10;" +
-            "-fx-background-radius: 5;" +
-            "-fx-border-color: #ddd;" +
-            "-fx-border-radius: 5;"
-        );
-        field.setFont(Font.font("Arial", 13));
-    }
+   private void styleTextField(TextField field) {
+    field.setStyle(
+        "-fx-padding: 10;" +
+        "-fx-background-radius: 5;" +
+        "-fx-border-color: #ddd;" +
+        "-fx-border-radius: 5;"
+    );
+    field.setFont(Font.font("Arial", 13));  
+}
+// Overloaded method to style TextArea
+private void styleTextField(TextArea field) {
+    field.setStyle(
+        "-fx-padding: 10;" +
+        "-fx-background-radius: 5;" +
+        "-fx-border-color: #ddd;" +
+        "-fx-border-radius: 5;" +
+        "-fx-font-family: 'Arial'; -fx-font-size: 13px;"
+    );
+}
+
     
     private void handleRegistration() {
         // Clear previous messages

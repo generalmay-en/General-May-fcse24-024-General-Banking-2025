@@ -176,16 +176,16 @@ public class TransactionView extends Application {
         
         return container;
     }
-    
-    private void styleTextField(Control field) {
-        field.setStyle(
-            "-fx-padding: 10;" +
-            "-fx-background-radius: 5;" +
-            "-fx-border-color: #ddd;" +
-            "-fx-border-radius: 5;"
-        );
-        field.setFont(Font.font("Arial", 13));
-    }
+    private void styleTextField(TextField field) {
+    field.setStyle(
+        "-fx-padding: 10;" +
+        "-fx-background-radius: 5;" +
+        "-fx-border-color: #ddd;" +
+        "-fx-border-radius: 5;"
+    );
+    field.setFont(Font.font("Arial", 13));  
+}
+
     
     private void checkBalance() {
         String accountNumber = accountNumberField.getText().trim();
