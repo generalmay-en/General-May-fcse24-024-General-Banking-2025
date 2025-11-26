@@ -1,0 +1,36 @@
+{
+    "name": "JavaFX Banking App with VNC",
+    "image": "mcr.microsoft.com/devcontainers/java:1-17-bullseye",
+    
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {},
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17",
+            "jdkDistro": "temurin"
+        }
+    },
+
+    "forwardPorts": [6080, 5901],
+
+    "portsAttributes": {
+        "6080": {
+            "label": "noVNC Desktop",
+            "onAutoForward": "notify"
+        },
+        "5901": {
+            "label": "VNC Server",
+            "onAutoForward": "silent"
+        }
+    },
+
+    "postCreateCommand": "bash .devcontainer/setup.sh",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "redhat.java",
+                "vscjava.vscode-java-pack"
+            ]
+        }
+    }
+}
