@@ -640,34 +640,7 @@ public class Customer {
 
 ## 📸 Screenshots
 
-### Login Screen
-![Login Screen](<img width="402" height="532" alt="image" src="https://github.com/user-attachments/assets/98e67b0a-6d73-4fa9-85d9-51bb963afa07" />
-)
-*Secure authentication with role-based access*
-
-### Dashboard
-![Dashboard](<img width="1002" height="732" alt="image" src="https://github.com/user-attachments/assets/62452a7d-3c1a-458f-8a43-7b6383d0dc24" />
-)
-*Main interface with all banking operations*
-
-### Customer Registration
-![Customer Registration]()
-*Simple form to register new customers*
-
-### Account Management
-![Account Management]()
-*Open different account types with validation*
-
-### Transaction Processing
-![Deposit]()
-*Real-time transaction processing*
-
-### Transaction History
-![Transaction History]()
-*Complete audit trail of all operations*
-
----
-
+### CHECK SCREENSHOT FOLDER
 ## 📄 License
 
 This project is submitted as academic work for CSE202 course at Botswana Accountancy College. All rights reserved.
