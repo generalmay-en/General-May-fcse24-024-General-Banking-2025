@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run BankingApplication",
+      "request": "launch",
+      "mainClass": "com.banking.BankingApplication",
+      "preLaunchTask": "Compile Banking Project",
+
+      "vmArgs": "--module-path \"C:/javafx-sdk-24/lib\" --add-modules javafx.controls,javafx.fxml",
+
+      "classPaths": [
+        "bin",
+        "lib/h2-2.2.224.jar"
+      ]
+    }
+  ]
+}
+
