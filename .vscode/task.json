@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Banking Project",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "--module-path", "C:/javafx-sdk-24/lib",
+                "--add-modules", "javafx.controls,javafx.fxml",
+
+                "-cp", "lib/h2-2.2.224.jar",
+                "-d", "bin",
+
+                "src/com/banking/*.java",
+                "src/com/banking/controller/*.java",
+                "src/com/banking/database/*.java",
+                "src/com/banking/interfaces/*.java",
+                "src/com/banking/model/*.java",
+                "src/com/banking/view/*.java",
+                "src/com/banking/dao/*.java"   
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
